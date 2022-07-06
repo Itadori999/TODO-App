@@ -1,78 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>todo</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>TODO App</title>
   </head>
-  <body>
-    <div class="banner-con">
-      <div class="banner">
-        <div class="content">
-          <h1>TODO</h1>
-          <div class="btn" id="theme-toggle">
-            <button class="btn btn__sun">
-              <img src="./Images/icon-sun.svg" alt="icon-sun" />
+
+  <body data-theme="darkTheme">
+    <div class="main__container">
+      <div class="todo">
+        <header class="header">
+          <section class="logo">
+            <h2 class="logo__title">TODO</h2>
+            <button class="btn btn--theme" id="theme-toggle">
+              <img
+                class="todo__elem--hide"
+                src="./images/icon-moon.svg"
+                alt="apply light theme mode"
+              />
+              <img src="./images/icon-sun.svg" alt="apply dark theme mode" />
             </button>
-            <button class="btn btn__moon">
-              <img src="./Images/icon-moon.svg" alt="icon-sun" />
-            </button>
+          </section>
+          <div class="todo__header">
+            <div class="todo__circle"></div>
+            <label for="todo-input">Create a new todo</label>
+            <input
+              type="text"
+              class="todo__input"
+              name="todo-input"
+              id="todo-input"
+              placeholder="Create a new todo..."
+            />
           </div>
-          <!-- <img src="./Images/icon-sun.svg" alt=""> -->
-        </div>
-        <div class="todo">
-          <form>
-            <input type="text" placeholder="Create a new todo.." id="text" />
-          </form>
-          <div class="list">
-            <div class="todo-con">
-              <div class="todo-li">
-                <div class="check">
-                  <img src="./Images/icon-check.svg" alt="" />
-                </div>
-                <p>Work</p>
-                <button class="close">
-                  <img src="./Images/icon-cross.svg" alt="" />
-                </button>
-              </div>
-              <div class="hr"></div>
-              <div class="todo-li">
-                <div class="check">
-                  <img src="./Images/icon-check.svg" alt="" />
-                </div>
-                <p>Work</p>
-                <button class="close">
-                  <img src="./Images/icon-cross.svg" alt="" />
-                </button>
-              </div>
-              <div class="hr"></div>
-              <div class="todo-li">
-                <div class="check">
-                  <img src="./Images/icon-check.svg" alt="" />
-                </div>
-                <p>Work</p>
-                <button class="close">
-                  <img src="./Images/icon-cross.svg" alt="" />
-                </button>
-              </div>
-              <div class="hr"></div>
+        </header>
+
+        <main class="main">
+          <ul class="todo__list" id="todo-list"></ul>
+          <div class="todo__filters">
+            <div class="todo__filters__sides">
+              <p class="btn"><span id="items-left">0</span> items left</p>
+              <button class="btn btn--clear" id="clear-completed">
+                Clear Completed
+              </button>
+            </div>
+            <div class="todo__filters__center">
+              <input
+                type="radio"
+                name="filter"
+                id="all"
+                value="all"
+                class="btn btn--bold"
+                checked
+              />
+              <label class="btn btn--bold" for="all">All</label>
+
+              <input
+                type="radio"
+                name="filter"
+                id="active"
+                value="active"
+                class="btn btn--bold"
+              />
+              <label class="btn btn--bold" for="active">Active</label>
+
+              <input
+                type="radio"
+                name="filter"
+                id="completed"
+                value="completed"
+                class="btn btn--bold"
+              />
+              <label class="btn btn--bold" for="completed">Completed</label>
             </div>
           </div>
-          <div class="info">
-            <p>5 items left</p>
-            <div class="choice">
-              <p class="active">All</p>
-              <p>Active</p>
-              <p>Completed</p>
-            </div>
-            <p>Clear Completed</p>
+        </main>
+
+        <footer>
+          <div class="attribution">
+            <p>Drag and drop to reorder the list</p>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
-    <script src="./index.js"></script>
+
+    <script src="/index.js"></script>
   </body>
 </html>
