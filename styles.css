@@ -17,7 +17,7 @@ html {
   color: #494c6b;
 }
 
-[data-theme="darkTheme"] {
+[data-theme="dark"] {
   color: #c8cbe7;
 }
 
@@ -54,7 +54,7 @@ img {
   color: #494c6b;
 }
 
-[data-theme="darkTheme"] .btn:hover {
+[data-theme="dark"] .btn:hover {
   color: #e3e4f1;
 }
 
@@ -66,7 +66,7 @@ p.btn:hover {
   color: inherit;
 }
 
-.main__container {
+.parent-con {
   width: 100vw;
   min-height: 100vh;
   background-image: url("../images/bg-desktop-light.jpg");
@@ -79,7 +79,7 @@ p.btn:hover {
   position: relative;
 }
 
-[data-theme="darkTheme"] .main__container {
+[data-theme="dark"] .parent-con {
   background: url("../images/bg-desktop-dark.jpg");
   background-color: #171823;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@ p.btn:hover {
   left: -25vw;
 }
 
-[data-theme="darkTheme"] .todo__header {
+[data-theme="dark"] .todo__header {
   background-color: #25273d;
   border: 1px solid #393a4b;
 }
@@ -142,8 +142,8 @@ p.btn:hover {
   background: transparent;
 }
 
-[data-theme="darkTheme"] .todo__circle,
-[data-theme="darkTheme"] .todo__check {
+[data-theme="dark"] .todo__circle,
+[data-theme="dark"] .todo__check {
   border: 1px solid #393a4b;
 }
 
@@ -157,7 +157,7 @@ p.btn:hover {
   background: transparent;
 }
 
-[data-theme="darkTheme"] .todo__input {
+[data-theme="dark"] .todo__input {
   color: inherit;
 }
 
@@ -179,7 +179,7 @@ p.btn:hover {
   overflow: hidden;
 }
 
-[data-theme="darkTheme"] .todo__list {
+[data-theme="dark"] .todo__list {
   border-top: 1px solid #393a4b;
   border-left: 1px solid #393a4b;
   border-right: 1px solid #393a4b;
@@ -196,11 +196,11 @@ p.btn:hover {
   padding: 2rem 2.4rem;
 }
 
-[data-theme="darkTheme"] .todo__elem {
+[data-theme="dark"] .todo__elem {
   border-bottom: 1px solid #393a4b;
 }
 
-[data-theme="darkTheme"] .todo__elem {
+[data-theme="dark"] .todo__elem {
   background-color: #25273d;
 }
 
@@ -218,7 +218,7 @@ p.btn:hover {
   text-decoration: line-through;
 }
 
-[data-theme="darkTheme"] .todo__elem--checked p {
+[data-theme="dark"] .todo__elem--checked p {
   color: #4d5067;
 }
 
@@ -229,7 +229,7 @@ p.btn:hover {
   transition: border 0.5s ease-in-out;
 }
 
-[data-theme="darkTheme"] .todo__check img {
+[data-theme="dark"] .todo__check img {
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
@@ -238,7 +238,7 @@ p.btn:hover {
   background: linear-gradient(to right, #55ddff, #c058f3);
 }
 
-[data-theme="darkTheme"] .todo__elem--checked .todo__check img {
+[data-theme="dark"] .todo__elem--checked .todo__check img {
   transform: scale(1);
 }
 
@@ -252,7 +252,7 @@ p.btn:hover {
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
-[data-theme="darkTheme"] .todo__filters__center {
+[data-theme="dark"] .todo__filters__center {
   background: #25273d;
   border-bottom: 1px solid #393a4b;
 }
@@ -282,11 +282,11 @@ footer {
   margin-bottom: auto;
 }
 
-[data-theme="darkTheme"] footer a {
+[data-theme="dark"] footer a {
   color: inherit;
   font-weight: bold;
 }
-[data-theme="darkTheme"] .todo__delete {
+[data-theme="dark"] .todo__delete {
   color: #979797;
 }
 
@@ -309,7 +309,7 @@ footer {
   border-bottom-right-radius: 5px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-[data-theme="darkTheme"] .todo__filters__sides {
+[data-theme="dark"] .todo__filters__sides {
   background: #25273d;
   border-bottom: 1px solid #393a4b;
   border-left: 1px solid #393a4b;
@@ -331,7 +331,7 @@ footer {
   html {
     font-size: 47%;
   }
-  .main__container {
+  .parent-con {
     padding: 0 15%;
     background: url("../images/bg-mobile-light.jpg");
     background-color: #fafafa;
@@ -339,7 +339,7 @@ footer {
     background-size: contain;
   }
 
-  [data-theme="darkTheme"] .main__container {
+  [data-theme="dark"] .parent-con {
     background: url("../images/bg-mobile-dark.jpg");
     background-color: #171823;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ footer {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  [data-theme="darkTheme"] .todo__filters__center {
+  [data-theme="dark"] .todo__filters__center {
     background: #25273d;
     border: 1px solid #393a4b;
   }

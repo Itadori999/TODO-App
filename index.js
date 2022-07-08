@@ -45,7 +45,7 @@ todoFilters.forEach((filter) => {
 function themeSwitcher(e) {
    themeLogos.forEach(logo => logo.classList.toggle("todo__elem--hide"));
    if (!document.body.dataset.theme) {
-      document.body.dataset.theme = "darkTheme";
+      document.body.dataset.theme = "dark";
    } else {
       document.body.dataset.theme = "";
    }
