@@ -2,21 +2,7 @@
 * {
   box-sizing: border-box;
 }
-html,
-body,
-div,
-h2,
-p,
-a,
-img,
-ul,
-li,
-label,
-footer,
-header,
-main,
-nav,
-section {
+html,body,div,h2,p,a,img,ul,li,label,footer,header,main,nav,section {
   margin: 0;
   padding: 0;
   border: 0;
